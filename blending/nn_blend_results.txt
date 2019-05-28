@@ -1,0 +1,11 @@
+BLENDED MODELS: kevin_svd_1.92 + knn
+
+Dense = 12, Dropout = 0.2, epochs = 1, batch_size = 200: AW -> 2.13%
+	"N/A"
+
+Dense = 12, Dropout = 0.2, epochs = 2, batch_size = 200: AW-> 2.21%  RMSE(Probe) ->0.8673
+	"nn_blend_wknn2_21.dta"
+
+======================================================================
+
+BLENDED MODELS: svdpp_4.04 + knn
