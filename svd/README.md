@@ -1,6 +1,6 @@
 # Author: James Wei
 
-# Models implemented:
+## Models implemented:
 1. Baseline
 2. SVD
 3. Time SVD
