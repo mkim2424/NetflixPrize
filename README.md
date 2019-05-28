@@ -9,3 +9,5 @@
 
 ### Test RMSE = 0.87633 (7.8905% above water)
 ### 3rd place finish
+
+[Scoreboard][http://cs156.caltech.edu/scoreboard/board/] 
