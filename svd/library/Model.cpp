@@ -2,17 +2,17 @@
 
 Model::Model(Parameter p, Eigen::ArrayXXi& train, Eigen::ArrayXXi& valid,
     Eigen::ArrayXXi& qual, std::string header) {
-    this->p = p;
-    this->k = p.k;
+    this->p        = p;
+    this->k        = p.k;
     this->maxEpoch = p.maxEpoch;
-    this->reg = p.reg;
-    this->eta = p.eta;
-    this->decay = p.decay;
+    this->reg      = p.reg;
+    this->eta      = p.eta;
+    this->decay    = p.decay;
     this->decay_factor = 1;
-    this->train = train;
-    this->valid = valid;
-    this->qual = qual;
-    this->header = header;
+    this->train    = train;
+    this->valid    = valid;
+    this->qual     = qual;
+    this->header   = header;
 
     this->base_u      = Eigen::VectorXd::Zero(M);
     this->base_i      = Eigen::VectorXd::Zero(N);

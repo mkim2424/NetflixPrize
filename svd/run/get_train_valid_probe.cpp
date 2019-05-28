@@ -1,12 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <cmath>
-#include <ctime>
-#include <cassert>
-#include <Eigen/Dense>
-
-#include "util.h"
-#include "values.h"
+#include "include.h"
 
 // std::string header = "/Users/jameswei/Documents/Caltech/cs156b/svd/";
 std::string header = "/home/ec2-user/cs156b/svd/";
@@ -78,10 +70,6 @@ int main(int argc, char *argv[]) {
             << train(i, 2) << " " << train(i, 3) << "\n";
     }
     std::cout << "done. Took " << time(nullptr) - before << "s.\n" << std::endl;
-
-    std::ofstream fout_valid(header + folder + "valid.dta");
-    assert(fout_valid.is_open());
-    // int *shuffle = shuffleIndicies(TRAINING_SIZE);
 
     std::ofstream fout_not_probe(header + folder + "not_probe.dta");
     assert(fout_not_probe.is_open());

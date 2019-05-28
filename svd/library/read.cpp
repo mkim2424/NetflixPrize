@@ -23,46 +23,6 @@ void fill_all(Eigen::ArrayXXi& all, std::string header) {
     fin_all.close();
 }
 
-void fill_train(Eigen::ArrayXXi& train, std::string header) {
-    std::cout << "Loading training data..." << std::endl;
-    std::ifstream fin_train(header + "data/train.dta");
-    assert(fin_train.is_open());
-    int usr_num, mv_num, date, rate;
-
-    for (int i = 0; i < TRAINING_SIZE - VALID_SIZE; i++) {
-        fin_train >> usr_num >> mv_num >> date >> rate;
-        train(i, 0) = usr_num - 1;
-        train(i, 1) = mv_num - 1;
-        train(i, 2) = date;
-        train(i, 3) = rate;
-
-        if ((i + 1) % 10000000 == 0) {
-            std::cout << "." << std::flush;
-        }
-    }
-
-    std::cout << ".\ndone.\n" << std::endl;
-    fin_train.close();
-}
-
-void fill_valid(Eigen::ArrayXXi& valid, std::string header) {
-    std::cout << "Loading validiation data..." << std::flush;
-    std::ifstream fin_valid(header + "data/valid.dta");
-    assert(fin_valid.is_open() && valid.rows() == VALID_SIZE);
-    int usr_num, mv_num, date, rate;
-
-    for (int i = 0; i < VALID_SIZE; i++) {
-        fin_valid >> usr_num >> mv_num >> date >> rate;
-        valid(i, 0) = usr_num - 1;
-        valid(i, 1) = mv_num - 1;
-        valid(i, 2) = date;
-        valid(i, 3) = rate;
-    }
-
-    std::cout << "done.\n" << std::endl;
-    fin_valid.close();
-}
-
 void fill_not_probe(Eigen::ArrayXXi& not_probe, std::string header) {
     std::cout << "Loading not_probe data..." << std::endl;
     std::ifstream fin_not_probe(header + "data/not_probe.dta");

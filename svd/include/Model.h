@@ -52,7 +52,6 @@ public:
     // Computes the RMSE error on the probe data.
     double getValidError();
 
-    void predictQualEpoch(int epoch);
     void predictQual();
     void predictProbe();
 };
