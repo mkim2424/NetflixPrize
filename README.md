@@ -9,9 +9,7 @@
 
 ### Test RMSE = 0.87633 (7.8905% above water)
 ### 3rd place finish
-
 ![Scoreboard](https://github.com/tennisplayer99/cs156b_deep_red/blob/master/scoreboard.png)
-
 [Scoreboard](http://cs156.caltech.edu/scoreboard/board/)
 
 ### Models Implemented
