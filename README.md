@@ -20,6 +20,8 @@
 4. SVD++
 5. Time SVD++
 6. Factorized Neighborhood Model
+7. KNN/ANN/RANN
+8. NMF
 
 ### Blending
 
