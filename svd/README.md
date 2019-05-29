@@ -7,3 +7,7 @@
 4. SVD++
 5. Time SVD++
 6. Factorized Neighborhood Model
+
+## Requirements
+
+* Eigen
