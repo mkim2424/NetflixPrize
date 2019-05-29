@@ -10,7 +10,7 @@
 ### Test RMSE = 0.87633 (7.8905% above water)
 ### 3rd place finish
 
-![Scoreboard](https://drive.google.com/file/d/1TEriFjDJqGw_kvol86QaRKi_mxvA7_u1/view?usp=sharing)
+![Scoreboard](https://github.com/tennisplayer99/cs156b_deep_red/blob/master/scoreboard.png)
 
 [Scoreboard](http://cs156.caltech.edu/scoreboard/board/)
 
@@ -22,8 +22,8 @@
 4. SVD++
 5. Time SVD++
 6. Factorized Neighborhood Model
-7. KNN/ANN/RANN
-8. NMF
+7. KNN/ANN/RANN (misc)
+8. NMF (misc)
 
 ### Blending
 
