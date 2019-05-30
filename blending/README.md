@@ -1,1 +1,1 @@
-# Author: Mattew (Min Hyuk) Kim
+# Author: Matthew (Min Hyuk) Kim
